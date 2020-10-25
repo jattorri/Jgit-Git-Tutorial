@@ -46,7 +46,7 @@ public class gitControl  {
                 i++;
                 git = Git.init().setDirectory(localpath).call();
                 git.remoteAdd().setUri(new URIish("https://github.com/jattorri/parcial1.git")).setName("origin").call();
-                git.push().setRemote("https://github.com/jattorri/parcial1.git").setCredentialsProvider(new UsernamePasswordCredentialsProvider("jattorri","Spektrum4512623" )).setPushAll().add(".").call();
+                git.push().setRemote("https://github.com/jattorri/parcial1.git").setCredentialsProvider(new UsernamePasswordCredentialsProvider("user","pass" )).setPushAll().add(".").call();
             }
 
         } catch (GitAPIException | URISyntaxException e) {
